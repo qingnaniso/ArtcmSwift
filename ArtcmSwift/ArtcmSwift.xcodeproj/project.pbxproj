@@ -13,6 +13,7 @@
 		E08819061E03E012001B39DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08819051E03E012001B39DE /* Assets.xcassets */; };
 		E08819091E03E012001B39DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08819071E03E012001B39DE /* LaunchScreen.storyboard */; };
 		E08819141E03E012001B39DE /* ArtcmSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08819131E03E012001B39DE /* ArtcmSwiftUITests.swift */; };
+		E088191F1E03E363001B39DE /* ASTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088191E1E03E363001B39DE /* ASTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E088190F1E03E012001B39DE /* ArtcmSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtcmSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08819131E03E012001B39DE /* ArtcmSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtcmSwiftUITests.swift; sourceTree = "<group>"; };
 		E08819151E03E012001B39DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E088191E1E03E363001B39DE /* ASTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				E08818FE1E03E012001B39DE /* AppDelegate.swift */,
 				E08819001E03E012001B39DE /* ViewController.swift */,
 				E08819021E03E012001B39DE /* Main.storyboard */,
+				E088191E1E03E363001B39DE /* ASTabBarViewController.swift */,
 				E08819051E03E012001B39DE /* Assets.xcassets */,
 				E08819071E03E012001B39DE /* LaunchScreen.storyboard */,
 				E088190A1E03E012001B39DE /* Info.plist */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E088191F1E03E363001B39DE /* ASTabBarViewController.swift in Sources */,
 				E08819011E03E012001B39DE /* ViewController.swift in Sources */,
 				E08818FF1E03E012001B39DE /* AppDelegate.swift in Sources */,
 			);
@@ -408,6 +412,7 @@
 				E088191A1E03E012001B39DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E088191B1E03E012001B39DE /* Build configuration list for PBXNativeTarget "ArtcmSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +421,7 @@
 				E088191D1E03E012001B39DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
