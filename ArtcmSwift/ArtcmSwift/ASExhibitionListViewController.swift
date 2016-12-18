@@ -1,20 +1,21 @@
 //
-//  ASTabBarViewController.swift
+//  ASExhibitionListViewController.swift
 //  ArtcmSwift
 //
-//  Created by smartrookie on 16/12/16.
+//  Created by Qiqingnan on 16/12/18.
 //  Copyright © 2016年 smartrookie. All rights reserved.
 //
 
 import UIKit
 
-class ASTabBarViewController: UITabBarController {
-    
-    
+class ASExhibitionListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.selectedIndex = 1
+        let common = ObjcCommonClass()
+        common.showSomething()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +23,13 @@ class ASTabBarViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExhibitionCell", for: indexPath)
+        return cell
+    }
     /*
     // MARK: - Navigation
 
