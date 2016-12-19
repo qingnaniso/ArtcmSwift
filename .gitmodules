@@ -1,0 +1,3 @@
+[submodule "ArtcmSwift/Alamofire"]
+	path = ArtcmSwift/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git

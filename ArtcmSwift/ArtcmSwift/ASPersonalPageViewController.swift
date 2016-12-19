@@ -1,20 +1,19 @@
 //
-//  ASTabBarViewController.swift
+//  ASPersonalPageViewController.swift
 //  ArtcmSwift
 //
-//  Created by smartrookie on 16/12/16.
+//  Created by Qiqingnan on 16/12/18.
 //  Copyright © 2016年 smartrookie. All rights reserved.
 //
 
 import UIKit
 
-class ASTabBarViewController: UITabBarController {
-    
-    
+class ASPersonalPageViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.selectedIndex = 1
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
