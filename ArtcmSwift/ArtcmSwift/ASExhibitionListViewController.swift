@@ -13,19 +13,20 @@ class ASExhibitionListViewController: UIViewController,UITableViewDelegate,UITab
 
     @IBOutlet weak var tableView: UITableView!
     var dataSource: Array<Any>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //http://www.artcm.cn/api/v2/exhibition/brief/?limit=20&offset=0&period_type=process
+    
         Alamofire.request("http://www.artcm.cn/api/v2/exhibition/brief/?limit=1&offset=0&period_type=process").responseJSON { (response) in
-            let str = String(data: response.data!, encoding: String.Encoding.utf8)
-            print(str!);
+            
+            let json = JSON(data: response.data!);
+            
+            print(json);
+            
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+//MARK: -tableview delegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -40,6 +41,12 @@ class ASExhibitionListViewController: UIViewController,UITableViewDelegate,UITab
         return 100.0
     }
     
+//MARK: -MemoryWaring
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     /*
     // MARK: - Navigation
 

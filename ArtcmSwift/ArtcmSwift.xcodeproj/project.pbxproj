@@ -20,6 +20,7 @@
 		E08819091E03E012001B39DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08819071E03E012001B39DE /* LaunchScreen.storyboard */; };
 		E08819141E03E012001B39DE /* ArtcmSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08819131E03E012001B39DE /* ArtcmSwiftUITests.swift */; };
 		E088191F1E03E363001B39DE /* ASTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088191E1E03E363001B39DE /* ASTabBarViewController.swift */; };
+		E0E8E5B81E1E1CEE0056C591 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E8E5B71E1E1CEE0056C591 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		E08819131E03E012001B39DE /* ArtcmSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtcmSwiftUITests.swift; sourceTree = "<group>"; };
 		E08819151E03E012001B39DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E088191E1E03E363001B39DE /* ASTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTabBarViewController.swift; sourceTree = "<group>"; };
+		E0E8E5B71E1E1CEE0056C591 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		E08818FD1E03E012001B39DE /* ArtcmSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E0E8E5B71E1E1CEE0056C591 /* SwiftyJSON.swift */,
 				E08818FE1E03E012001B39DE /* AppDelegate.swift */,
 				E08819021E03E012001B39DE /* Main.storyboard */,
 				E088191E1E03E363001B39DE /* ASTabBarViewController.swift */,
@@ -375,6 +378,7 @@
 				E03C41131E07717A00FF4B8C /* NSString+URL.m in Sources */,
 				C72A0F561E06A658002DCC70 /* ASExhibitionListTableViewCell.swift in Sources */,
 				C72A0F7A1E06C37C002DCC70 /* ObjcCommonClass.m in Sources */,
+				E0E8E5B81E1E1CEE0056C591 /* SwiftyJSON.swift in Sources */,
 				E088191F1E03E363001B39DE /* ASTabBarViewController.swift in Sources */,
 				C72A0F581E06BD48002DCC70 /* ASPersonalPageViewController.swift in Sources */,
 				C72A0F541E06A315002DCC70 /* ASExhibitionListViewController.swift in Sources */,
