@@ -17,6 +17,7 @@ class ASExhibitionListViewController: UIViewController,UITableViewDelegate,UITab
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        
         Alamofire.request("http://www.artcm.cn/api/v2/exhibition/brief/?limit=1&offset=0&period_type=process").responseJSON { (response) in
             
             let json = JSON(data: response.data!);
@@ -24,6 +25,18 @@ class ASExhibitionListViewController: UIViewController,UITableViewDelegate,UITab
             print(json);
             
         }
+ 
+        let greeting = greet(person: "qiqingnan");
+        print(greeting);
+        
+        var a = 1
+        var b = 2
+        
+        let verpo = swap(&a, &b)
+        print(verpo);
+        
+        
+        
     }
     
 //MARK: -tableview delegate
@@ -39,6 +52,19 @@ class ASExhibitionListViewController: UIViewController,UITableViewDelegate,UITab
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
+    }
+    
+//MARK: -Private Fuctions
+    func greet(person:String) -> String {
+        let greeting = "Hello " + person + "!"
+        return greeting;
+    }
+    
+    func swap(_ a: inout Int, _ b: inout Int) -> (a:Int,b:Int) {
+        let temp = b
+        b = a
+        a = temp
+        return (a,b)
     }
     
 //MARK: -MemoryWaring
